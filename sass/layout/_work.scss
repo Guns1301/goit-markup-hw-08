@@ -11,11 +11,11 @@
 /* work */
 
 .work-list {
-  display: flex;
+  // display: flex;
 
-  &.item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &.item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 }
 
 .work-list .title {

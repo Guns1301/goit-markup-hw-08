@@ -399,6 +399,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  outline: 2px solid tomato;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
@@ -484,9 +488,7 @@ a {
 
 /* подчеркивание */
 .menu-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   height: 100%;
 }
 
@@ -530,11 +532,29 @@ a {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -552,22 +572,8 @@ a {
 }
 
 /* contacts */
-.flexbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .contact-us {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   margin-left: auto;
 }
 
@@ -849,16 +855,7 @@ a {
   height: 252px;
 }
 
-.footer-menu {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -980,7 +977,8 @@ a {
 }
 
 .subscribe input {
-  width: 358px;
+  max-width: 358px;
+  width: 100%;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -989,12 +987,6 @@ a {
   padding: 15px 16px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.form-field {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-form label {
@@ -1007,12 +999,6 @@ a {
 }
 
 .footer-btn {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   margin-left: 12px;
   color: #ffffff;
   background-color: #2196f3;

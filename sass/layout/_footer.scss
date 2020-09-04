@@ -5,11 +5,11 @@
 }
 
 .footer-menu {
-  display: flex;
-  flex-wrap: wrap;
+  // display: flex;
+  // flex-wrap: wrap;
 }
 .container {
-  width: 1200px;
+  // width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -136,7 +136,7 @@
 }
 
 .form-field {
-  display: flex;
+  // display: flex;
 }
 .footer-form label {
   color: $white-color;
@@ -148,8 +148,8 @@
 }
 
 .footer-btn {
-  display: inline-flex;
-  align-items: center;
+  // display: inline-flex;
+  // align-items: center;
   margin-left: 12px;
   color: $white-color;
   background-color: $accent-color;

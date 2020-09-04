@@ -8,15 +8,16 @@
   text-align: center;
   margin-bottom: 50px;
   font-weight: bold;
-  font-size: 36px;
+  // font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
   letter-spacing: 0.03em;
 }
 
 .feature-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: space-between;
 
   & .item::before {
     display: block;
