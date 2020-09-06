@@ -922,6 +922,7 @@ img {
 
 .join {
   display: block;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -969,6 +970,7 @@ img {
 .footer-form label {
   display: block;
   margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -985,6 +987,7 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }

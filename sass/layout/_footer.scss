@@ -6,10 +6,10 @@
 }
 @media screen and(max-width:768px) {
 }
-.footer-menu {
-  // display: flex;
-  // flex-wrap: wrap;
-}
+// .footer-menu {
+//   // display: flex;
+//   // flex-wrap: wrap;
+// }
 .container {
   // width: 1200px;
   padding-left: 15px;
@@ -75,6 +75,7 @@
 
 .join {
   display: block;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -116,6 +117,7 @@
 .footer-form label {
   display: block;
   margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 20px;
 
   color: $white-color;
@@ -134,13 +136,14 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.form-field {
-  // display: flex;
-}
+// .form-field {
+//   // display: flex;
+// }
 .footer-form label {
   color: $white-color;
   font-weight: bold;

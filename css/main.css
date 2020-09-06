@@ -663,6 +663,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-image: url("../images/hero/mobile/Header480@2x.jpg");
   }
 }
@@ -676,6 +678,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-image: url("../images/hero/tablet/Header768@2x.jpg");
   }
 }
@@ -689,6 +693,8 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2)));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-image: url("../images/hero/desktop/Header1600@2x.jpg");
   }
 }
@@ -987,18 +993,19 @@ img {
   border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (max-width: 479px) {
-  .clients-list .item {
-    width: 100%;
-  }
-  .clients-list .item + .item {
-    margin-top: 30px;
-  }
-}
-
 .clients-list {
   padding: 0;
   list-style-type: none;
+}
+
+@media screen and (max-width: 479px) {
+  .clients-list {
+    margin: -15px;
+  }
+  .clients-list .item {
+    margin: 15px;
+    width: 210px;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -1194,6 +1201,7 @@ img {
 
 .join {
   display: block;
+  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -1241,6 +1249,7 @@ img {
 .footer-form label {
   display: block;
   margin-top: 0;
+  margin-top: 60px;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -1257,6 +1266,7 @@ img {
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
 }
