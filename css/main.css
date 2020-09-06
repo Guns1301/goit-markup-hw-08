@@ -399,10 +399,6 @@ html {
           box-sizing: inherit;
 }
 
-* {
-  outline: 2px solid tomato;
-}
-
 body {
   background-color: #ffffff;
   color: #212121;
@@ -420,7 +416,7 @@ h3 {
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 a {
@@ -650,10 +646,24 @@ a {
   padding-bottom: 200px;
   text-align: center;
   background-color: #c4c4c4;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/Hero-optmz.jpg");
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Hero-optmz.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../../images/hero/mobile/Header480.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/hero/mobile/Header480.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../../images/hero/tablet/Header768.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../../images/hero/tablet/Header768.jpg");
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.2)), to(rgba(0, 0, 0, 0.2))), url("../images/hero/desktop/Hero-optmz.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/hero/desktop/Hero-optmz.jpg");
+  }
 }
 
 .hero-title {
@@ -662,6 +672,8 @@ a {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-left: 45px;
+  padding-right: 45px;
   height: 120px;
   font-weight: 900;
   font-size: 26px;
@@ -739,6 +751,10 @@ a {
 }
 
 /* <!--Преимушества--> */
+.margin-top {
+  display: none;
+}
+
 .margin-top {
   padding-top: 0;
 }
@@ -877,7 +893,7 @@ a {
   background-color: #ffffff;
 }
 
-.image {
+.team-member:not(:last-child) {
   margin-bottom: 30px;
 }
 
@@ -905,10 +921,13 @@ a {
 /* social list */
 /* карточка члена команды */
 .team-menu .team-member {
-  height: 422x;
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+}
+
+.team-menu .team-member:last-child {
+  margin-top: 60px;
 }
 
 .clients .item {
@@ -954,12 +973,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 44px;
-  width: 270px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-bottom: 30px;
+  padding-bottom: 24px;
 }
 
 .social-item {
@@ -1011,7 +1028,7 @@ a {
 .footer {
   background-color: #2f303a;
   padding: 60px 0px;
-  height: 252px;
+  text-align: center;
 }
 
 .container {
@@ -1024,7 +1041,6 @@ a {
 
 .logo-address {
   display: block;
-  margin-right: 70px;
 }
 
 .footer-logo {
@@ -1070,12 +1086,14 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 /* join */
 .join-menu {
   display: block;
-  margin-right: 93px;
 }
 
 .join {
@@ -1136,7 +1154,6 @@ a {
 }
 
 .subscribe input {
-  max-width: 358px;
   width: 100%;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);

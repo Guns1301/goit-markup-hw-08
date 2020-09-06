@@ -5,10 +5,12 @@
   &:not(:last-child) {
     margin-right: 30px;
   }
+ 
 }
 
-.clients .list {
-  // display: flex;
+.clients .list { 
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .client-link {

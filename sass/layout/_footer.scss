@@ -1,7 +1,8 @@
 .footer {
   background-color: #2f303a;
   padding: 60px 0px;
-  height: 252px;
+  // height: 252px;
+  text-align: center;
 }
 
 .footer-menu {
@@ -19,7 +20,7 @@
 
 .logo-address {
   display: block;
-  margin-right: 70px;
+  // margin-right: 70px;
 }
 
 .footer-logo {
@@ -62,12 +63,13 @@
 }
 .social-list-footer {
   display: flex;
+  justify-content: center;
 }
 
 /* join */
 .join-menu {
   display: block;
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 
 .join {
@@ -124,7 +126,7 @@
 }
 
 .subscribe input {
-  max-width: 358px;
+  // max-width: 358px;
   width: 100%;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
