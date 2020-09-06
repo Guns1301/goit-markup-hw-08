@@ -399,10 +399,6 @@ html {
           box-sizing: inherit;
 }
 
-* {
-  outline: 2px solid tomato;
-}
-
 body {
   background-color: #ffffff;
   color: #212121;
@@ -920,6 +916,16 @@ a {
 
 .team-member:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .team-menu {
+    margin: -15px;
+  }
+  .team-menu .team-member {
+    margin: 15px;
+    width: 354px;
+  }
 }
 
 .team-title {
