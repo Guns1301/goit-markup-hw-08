@@ -8,9 +8,9 @@ html {
   box-sizing: inherit;
 }
 
-* {
-  // outline: 2px solid tomato;
-}
+// * {
+//   // outline: 2px solid tomato;
+// }
 
 body {
   background-color: $white-color;
@@ -60,4 +60,10 @@ a {
 }
 .link {
   text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }

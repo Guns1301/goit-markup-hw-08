@@ -1,10 +1,10 @@
 .hero {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url('../../images/hero/mobile/Header480.jpg');
+    url('../images/hero/mobile/Header480.jpg');
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/mobile/Header480@2x.jpg);
+    background-image: url(../images/hero/mobile/Header480@2x.jpg);
   }
 
   height: 400px;
@@ -12,13 +12,13 @@
 
   @include for-size(tablet-portrait) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-      url('../../images/hero/tablet/Header768.jpg');
+      url('../images/hero/tablet/Header768.jpg');
   }
 
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/tablet/Header768@2x.jpg);
+    background-image: url(../images/hero/tablet/Header768@2x.jpg);
   }
 
   @include for-size(desktop) {
@@ -29,7 +29,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/desktop/Header1600@2x.jpg);
+    background-image: url(../images/hero/desktop/Header1600@2x.jpg);
   }
   height: 600px;
   padding-top: 200px;
