@@ -4,7 +4,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/hero/mobile/Header480@2x.jpg);
+    background-image: url('../images/hero/mobile/Header480@2x.jpg');
   }
 
   height: 400px;
@@ -18,7 +18,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/hero/tablet/Header768@2x.jpg);
+    background-image: url('../images/hero/tablet/Header768@2x.jpg');
   }
 
   @include for-size(desktop) {
@@ -29,7 +29,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
-    background-image: url(../images/hero/desktop/Header1600@2x.jpg);
+    background-image: url('../images/hero/desktop/Header1600@2x.jpg');
   }
   height: 600px;
   padding-top: 200px;
