@@ -1,6 +1,6 @@
 .button-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   margin-top: 0;
   margin-bottom: 50px;
 
@@ -8,6 +8,11 @@
     text-align: center;
     display: inline-block;
   }
+}
+
+.button-container .item:not(:last-child) {
+  margin-right: 8px;
+  margin-bottom: 15px;
 }
 
 .btn {

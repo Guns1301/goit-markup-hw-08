@@ -8,8 +8,14 @@
     background-image: url('../images/hero/mobile/Header480@2x.jpg');
   }
 
+  width: 100%;
   height: 400px;
-  padding-top: 116px;
+  padding: 118px 0px;
+  background-color: #c4c4c4;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
 
   @include for-size(tablet-portrait) {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
@@ -34,19 +40,6 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     background-image: url('../images/hero/desktop/Header1600@2x.jpg');
   }
-  height: 600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
-
-  margin-left: auto;
-  margin-right: auto;
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: cover;
-
-  text-align: center;
-  background-color: #c4c4c4;
 }
 
 .hero-title {
@@ -70,7 +63,7 @@
   // }
 
   // width: 696px;
-  height: 120px;
+  // height: 120px;
   font-weight: 900;
   // font-size: 44px;
   font-size: 26px;
