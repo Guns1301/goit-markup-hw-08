@@ -488,6 +488,39 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 768px) {
+  .menu-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav {
+    display: none;
+  }
+  .contact-us {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 /* подчеркивание */
 .menu-nav {
   height: 100%;
@@ -574,7 +607,6 @@ img {
 
 /* contacts */
 .contact-us {
-  display: none;
   margin-left: auto;
 }
 
@@ -644,14 +676,42 @@ img {
 
 @media screen and (min-width: 480px) {
   .flex-container {
-    width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 0px 0px;
+    padding: 0;
+    margin: 0;
   }
-  .container-element {
-    margin-right: 30px;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .container-element:not(:last-child) {
+    width: 450px;
     margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .flex-container {
+    margin: -15px;
+  }
+  .flex-container .container-element {
+    margin: 15px;
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 480px) and (min-width: 768px) {
+  .flex-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: -15px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .container-element {
+    width: 100%;
     border: 1px solid #eeeeee;
   }
   .container-element:hover {
@@ -755,30 +815,66 @@ img {
   margin-bottom: 15px;
 }
 
-.btn {
-  margin-right: 8px;
-  min-width: 73px;
-  height: 38px;
-  padding: 6px 22px;
-  border-radius: 4px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background: #f5f4fa;
-  border: 1px solid transparent;
-  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+@media screen and (min-width: 320px) {
+  .btn {
+    margin-right: 8px;
+    min-width: 73px;
+    height: 38px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #f5f4fa;
+    border: 1px solid transparent;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn:hover,
+  .btn :focus {
+    background: #2196f3;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.btn:hover,
-.btn :focus {
-  background: #2196f3;
-  color: #ffffff;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+@media screen and (min-width: 768px) {
+  .button-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn {
+    margin-right: 8px;
+    min-width: 73px;
+    height: 38px;
+    padding: 6px 22px;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    background: #f5f4fa;
+    border: 1px solid transparent;
+    -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .btn:hover,
+  .btn :focus {
+    background: #2196f3;
+    color: #ffffff;
+    -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .social-list {
@@ -841,6 +937,51 @@ img {
   background-color: #2f303a;
   padding: 60px 0px;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .logo-address {
+    margin-right: 165px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-menu {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .join-menu {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .container {
@@ -910,7 +1051,6 @@ img {
 
 .join {
   display: block;
-  margin-top: 60px;
   margin-bottom: 20px;
   font-weight: 700;
   font-size: 14px;
@@ -955,10 +1095,15 @@ img {
   display: block;
 }
 
+@media screen and (min-width: 480px) {
+  .subscribe {
+    margin-top: 60px;
+  }
+}
+
 .footer-form label {
   display: block;
   margin-top: 0;
-  margin-top: 60px;
   margin-bottom: 20px;
   color: #ffffff;
   font-weight: 700;
