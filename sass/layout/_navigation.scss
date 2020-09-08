@@ -23,14 +23,14 @@
     margin-right: auto;
   }
 }
-@media screen and (max-width: 767px) {
-  .menu-nav {
-    display: none;
-  }
-  .contact-us {
-    display: none;
-  }
-}
+// @media screen and (max-width: 767px) {
+//   .menu-nav {
+//     display: none;
+//   }
+//   .contact-us {
+//     display: none;
+//   }
+// }
 
 @media screen and (min-width: 768px) {
   .menu-container {
@@ -96,3 +96,5 @@
 .menu-nav .link:focus {
   color: $accent-color;
 }
+
+// Mobile Menu - Burger -->

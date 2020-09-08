@@ -399,10 +399,6 @@ html {
           box-sizing: inherit;
 }
 
-* {
-  outline: 2px solid tomato;
-}
-
 body {
   background-color: #ffffff;
   color: #212121;
@@ -501,15 +497,6 @@ img {
             align-items: center;
     margin-left: auto;
     margin-right: auto;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .menu-nav {
-    display: none;
-  }
-  .contact-us {
-    display: none;
   }
 }
 
@@ -626,8 +613,10 @@ img {
   margin-left: auto;
 }
 
-.email {
-  margin-right: 30px;
+@media screen and (min-width: 1200px) {
+  .email {
+    margin-right: 30px;
+  }
 }
 
 .contact-link {
@@ -1023,6 +1012,10 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-menu {
+    width: 1200px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1042,6 +1035,10 @@ img {
   }
   .logo-address {
     margin-right: 70px;
+  }
+  .subscribe {
+    width: 358px;
+    margin-right: 10px;
   }
 }
 

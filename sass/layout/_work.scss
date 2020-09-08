@@ -1,11 +1,12 @@
-// !!!
-// @media screen and (min-width: 1200px) {
-//   .section:not(:first-child) {
-//     padding-top: 94px;
-//     padding-bottom: 94px;
-//   }
-// }
+@media screen and (max-width: 1199px) {
+  .margin-top {
+    display: none;
+  }
+}
 
+.margin-top {
+  padding-top: 0;
+}
 .ourwork-title {
   font-weight: 700;
   font-size: 14px;
@@ -18,13 +19,13 @@
 
 /* work */
 
-// .work-list {
-//   // display: flex;
+.work-list {
+  display: flex;
 
-//   // &.item:not(:last-child) {
-//   //   margin-right: 30px;
-//   // }
-// }
+  &.item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
 
 .work-list .title {
   font-weight: 700;

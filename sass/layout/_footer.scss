@@ -42,6 +42,8 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-menu {
+    width: 1200px;
+    align-items: flex-start;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -54,6 +56,10 @@
   }
   .logo-address {
     margin-right: 70px;
+  }
+  .subscribe {
+    width: 358px;
+    margin-right: 10px;
   }
 }
 
