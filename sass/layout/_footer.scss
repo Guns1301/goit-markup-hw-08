@@ -43,11 +43,20 @@
 @media screen and (min-width: 1200px) {
   .footer-menu {
     display: flex;
+    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
     text-align: start;
   }
+  .join {
+    margin-bottom: 0;
+    margin-right: 93px;
+  }
+  .logo-address {
+    margin-right: 70px;
+  }
 }
+
 // .footer-menu {
 //   // display: flex;
 //   // flex-wrap: wrap;
