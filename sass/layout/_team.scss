@@ -45,6 +45,22 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .team-menu {
+    margin: -15px;
+    & .team-member {
+      margin: 15px;
+      width: 270px;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .team-menu {
+    display: flex;
+    flex-wrap: wrap;
+    padding: -15px;
+  }
+}
 // .image {
 //   // margin-bottom: 30px;
 // }

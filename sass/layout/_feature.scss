@@ -29,7 +29,17 @@
     }
   }
 }
-
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    margin: -15px;
+    display: flex;
+    flex-wrap: wrap;
+    & .item {
+      margin: 15px;
+      width: 270px;
+    }
+  }
+}
 .feature-list {
   // display: flex;
   // flex-wrap: wrap;

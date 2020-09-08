@@ -782,6 +782,26 @@ img {
   margin-right: auto;
 }
 
+@media screen and (max-width: 1199px) {
+  .hero-title {
+    max-width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+
 .button-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -894,6 +914,21 @@ img {
   .feature-list .item {
     margin: 15px;
     width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-list {
+    margin: -15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .feature-list .item {
+    margin: 15px;
+    width: 270px;
   }
 }
 
@@ -1035,6 +1070,27 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .team-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding: -15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-menu {
+    margin: -15px;
+  }
+  .team-menu .team-member {
+    margin: 15px;
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
   .team-menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1257,6 +1313,21 @@ img {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    text-align: start;
   }
 }
 
