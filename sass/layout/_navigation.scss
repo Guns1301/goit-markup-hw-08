@@ -1,7 +1,7 @@
 .navigation {
   display: flex;
   align-items: center;
-  margin-right: auto;
+  // margin-right: auto;
 }
 
 .menu-nav .nav-link {
@@ -39,6 +39,16 @@
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    display: flex;
+    text-align: center;
+  }
+  .menu-nav {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
 /* подчеркивание */
 .menu-nav {
   // display: flex;

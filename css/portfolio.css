@@ -399,6 +399,10 @@ html {
           box-sizing: inherit;
 }
 
+* {
+  outline: 2px solid tomato;
+}
+
 body {
   background-color: #ffffff;
   color: #212121;
@@ -473,7 +477,6 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-right: auto;
 }
 
 .menu-nav .nav-link {
@@ -518,6 +521,19 @@ img {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .contact-us {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+  }
+  .menu-nav {
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
