@@ -49,10 +49,11 @@
     align-items: flex-start;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     text-align: start;
   }
+
   // .container {
   //   width: 1200px;
   // }
@@ -64,7 +65,7 @@
   //   margin-right: 70px;
   // }
   .subscribe {
-    width: 358px;
+    width: 570px;
     margin-right: 10px;
   }
   .form-field {
@@ -130,6 +131,7 @@
 .social-list-footer {
   display: flex;
   justify-content: center;
+  margin-top: 20px;
 }
 
 /* join */
