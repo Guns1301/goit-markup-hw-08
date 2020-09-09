@@ -42,13 +42,15 @@
 }
 @media screen and (min-width: 1200px) {
   .footer-menu {
-    width: 1200px;
     align-items: flex-start;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: baseline;
     text-align: start;
+  }
+  .container {
+    width: 1200px;
   }
   .join {
     margin-bottom: 0;
@@ -60,6 +62,10 @@
   .subscribe {
     width: 358px;
     margin-right: 10px;
+    // margin-top: 0px;
+  }
+  .form-field {
+    display: flex;
   }
 }
 
@@ -169,7 +175,7 @@
 .subscribe {
   display: block;
 }
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe {
     margin-top: 60px;
   }
@@ -203,9 +209,6 @@
   color: rgba(255, 255, 255, 0.6);
 }
 
-// .form-field {
-//   // display: flex;
-// }
 .footer-form label {
   color: $white-color;
   font-weight: bold;

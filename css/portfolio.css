@@ -1012,7 +1012,6 @@ img {
 
 @media screen and (min-width: 1200px) {
   .footer-menu {
-    width: 1200px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1029,6 +1028,9 @@ img {
             align-items: baseline;
     text-align: start;
   }
+  .container {
+    width: 1200px;
+  }
   .join {
     margin-bottom: 0;
     margin-right: 93px;
@@ -1039,6 +1041,11 @@ img {
   .subscribe {
     width: 358px;
     margin-right: 10px;
+  }
+  .form-field {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -1153,7 +1160,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .subscribe {
     margin-top: 60px;
   }
