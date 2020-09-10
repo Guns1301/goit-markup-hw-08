@@ -1,9 +1,9 @@
 /* contacts */
 
 // .flexbox {
-//   // display: flex;
-//   // justify-content: flex-end;
-//   // align-items: center;
+//   display: flex;
+//   justify-content: flex-end;
+//   align-items: center;
 // }
 @media screen and (max-width: 767px) {
   .header-mail {
@@ -32,7 +32,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .contact-us {
-    margin-left: 84px;
+    margin-left: 70px;
   }
 }
 
@@ -62,7 +62,6 @@
   margin-right: 10px;
   width: 11px;
   height: 16px;
-  /* fill: currentColor; */
 }
 .contact-link {
   color: $main-color;
