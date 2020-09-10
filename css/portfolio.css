@@ -501,7 +501,7 @@ img {
 
 @media screen and (max-width: 767px) {
   .menu-container {
-    display: none;
+    display: block;
     position: absolute;
     top: 100%;
     left: 0;
@@ -509,9 +509,12 @@ img {
     padding: 60px 10px;
     text-align: center;
     background: white;
+    height: 453px;
+    -webkit-box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
   }
   .menu-container.is-open {
-    display: block;
+    display: none;
   }
 }
 
@@ -545,7 +548,7 @@ img {
 }
 
 .menu-nav .nav-link {
-  display: block;
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -554,6 +557,14 @@ img {
   text-decoration: none;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (max-width: 767px) {
+  .menu-nav .nav-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -618,8 +629,16 @@ img {
   }
 }
 
-.menu-nav .item + .item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .menu-nav .current::after {
+    bottom: -8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-nav .item + .item {
+    margin-left: 50px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -951,7 +970,7 @@ img {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 480px) {
   .btn {
     margin-right: 8px;
     min-width: 73px;
@@ -1283,6 +1302,12 @@ img {
   margin-bottom: 20px;
   font-size: 16px;
   color: rgba(255, 255, 255, 0.6);
+}
+
+@media screen and (max-width: 1199px) {
+  .subscribe input {
+    width: 100%;
+  }
 }
 
 .footer-form label {

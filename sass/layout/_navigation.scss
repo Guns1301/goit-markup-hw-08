@@ -9,7 +9,8 @@
 }
 
 .menu-nav .nav-link {
-  display: block;
+  // display: block;
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -18,7 +19,14 @@
   text-decoration: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 767px) {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
 }
+
 @media screen and (min-width: 768px) {
   .menu-nav {
     display: flex;
@@ -73,9 +81,18 @@
   }
 }
 
-.menu-nav .item + .item {
-  margin-left: 50px;
+@media screen and (max-width: 767px) {
+  .menu-nav .current::after {
+    bottom: -8px;
+  }
 }
+
+@media screen and (min-width: 768px) {
+  .menu-nav .item + .item {
+    margin-left: 50px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .menu-nav .nav-link {
     display: block;

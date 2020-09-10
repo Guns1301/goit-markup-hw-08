@@ -54,16 +54,6 @@
     text-align: start;
   }
 
-  // .container {
-  //   width: 1200px;
-  // }
-  // .join {
-  //   margin-bottom: 0;
-  //   margin-right: 93px;
-  // }
-  // .logo-address {
-  //   margin-right: 70px;
-  // }
   .subscribe {
     width: 570px;
     margin-right: 10px;
@@ -200,6 +190,9 @@
   // display: flex;
   // justify-content: center;
   // width: 100%;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
   width: 350px;
   margin-right: 12px;
   background-color: inherit;
