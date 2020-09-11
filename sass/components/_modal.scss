@@ -9,7 +9,7 @@
   height: 100%;
 
   background-color: rgba(0, 0, 0, 0.2);
-  z-index: 2;
+  z-index: 99;
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -22,16 +22,16 @@
 
 .modal {
   @media screen and (min-width: 480px) and(max-width:1199px) {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    // min-height: 609px;
   }
   position: absolute;
   top: 50%;
   left: 50%;
   max-width: 100%;
   @media screen and (min-width: 1200px) {
-    min-width: 528px;
-    min-height: 581px;
+    width: 528px;
+    // min-height: 581px;
   }
 
   background-color: $white-color;
@@ -64,8 +64,10 @@
 
 /* Button Close */
 .btn-close {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
   align-items: center;
   padding: 0;
   margin: 0;
@@ -94,8 +96,7 @@
 }
 
 .btn-position {
-  display: flex;
-  justify-content: flex-end;
+  position: absolute;
 }
 
 /* Form inputs */
@@ -104,10 +105,10 @@
   margin-left: auto;
   padding: 40px;
   color: $dark-color;
-  @media screen and (min-width: 480px) {
-    padding-top: 0px;
-    padding-bottom: 0px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   padding-top: 0px;
+  //   padding-bottom: 0px;
+  // }
 }
 
 .form-field,
@@ -238,7 +239,10 @@
 
 /* Button Send */
 .form-btn {
-  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  // position: absolute;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 56px;
@@ -247,8 +251,8 @@
   border: none;
   width: 200px;
   height: 50px;
-  left: 0;
-  transform: translateX(124px);
+  // left: 0;
+  // transform: translateX(124px);
 
   color: $white-color;
   background-color: $accent-color;
