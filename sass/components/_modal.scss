@@ -21,23 +21,26 @@
 }
 
 .modal {
-  @media screen and (min-width: 480px) and(max-width:1199px) {
-    width: 450px;
-    // min-height: 609px;
-  }
   position: absolute;
   top: 50%;
   left: 50%;
   max-width: 100%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  // margin: 15px;
+  overflow-y: scroll;
+
+  @media screen and (min-width: 480px) and(max-width:1199px) {
+    width: 450px;
+    // min-height: 609px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
     // min-height: 581px;
   }
 
   background-color: $white-color;
-
-  transform: translate(-50%, -50%) scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -70,10 +73,10 @@
 
   align-items: center;
   padding: 0;
-  margin: 0;
-  margin-top: 8px;
-  margin-bottom: 2px;
-  margin-right: 8px;
+  // margin: 0;
+  // margin-top: 8px;
+  // margin-bottom: 2px;
+  // margin-right: 8px;
   width: 30px;
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
@@ -185,9 +188,11 @@
 }
 
 /* Checkbox */
+
 .checkbox-field {
-  display: flex;
-  align-items: center;
+  display: block;
+
+  // align-items: center;
 
   margin-bottom: 30px;
 
@@ -215,6 +220,7 @@
 .checkbox-icon {
   display: inline-block;
   margin-right: 8px;
+  vertical-align: middle;
   width: 16px;
   height: 15px;
 
@@ -251,6 +257,11 @@
   border: none;
   width: 200px;
   height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
   // left: 0;
   // transform: translateX(124px);
 
