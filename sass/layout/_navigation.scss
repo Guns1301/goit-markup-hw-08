@@ -40,6 +40,7 @@
   .menu-container {
     display: flex;
     align-items: center;
+    z-index: 11;
   }
 }
 
@@ -125,6 +126,9 @@
   }
 }
 
-// .nav-link.current:hover {
-//   color: $accent-color;
-// }
+.nav-link.current {
+  color: $accent-color;
+}
+.menu-container {
+  z-index: 3;
+}
