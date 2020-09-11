@@ -70,6 +70,9 @@
   // width: calc((100% - 90px) / 4);
   // display: inline;
   padding: 0;
+  @media screen and(max-width:767px) {
+    margin-bottom: 30px;
+  }
 }
 
 /* иконки в преимуществах */
@@ -82,6 +85,9 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 30px;
+  @media screen and (max-width: 767px) {
+    text-align: center;
+  }
 }
 
 .section .description {

@@ -512,6 +512,12 @@ img {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .header-mail {
+    margin-bottom: 10px;
+  }
+}
+
 .contact-us {
   margin-left: auto;
 }
@@ -1079,6 +1085,12 @@ img {
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .feature-list > .item {
+    margin-bottom: 30px;
+  }
+}
+
 /* иконки в преимуществах */
 .feature-list .features-title {
   margin-top: 0;
@@ -1089,6 +1101,12 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   padding-top: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .feature-list .features-title {
+    text-align: center;
+  }
 }
 
 .section .description {
