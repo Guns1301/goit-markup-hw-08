@@ -947,7 +947,7 @@ img {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .btn {
     margin-right: 8px;
     min-width: 73px;
@@ -1867,12 +1867,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-left: 13px;
   margin-bottom: 30px;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-field {
+    padding-left: 13px;
+    font-size: 12px;
+  }
 }
 
 .input-checkbox {

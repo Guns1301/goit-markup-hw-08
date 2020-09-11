@@ -182,13 +182,17 @@
 .checkbox-field {
   display: flex;
   align-items: center;
-  padding-left: 13px;
+
   margin-bottom: 30px;
 
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: $main-color;
+  @media screen and (min-width: 1200px) {
+    padding-left: 13px;
+    font-size: 12px;
+  }
 }
 
 .input-checkbox {

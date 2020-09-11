@@ -863,7 +863,12 @@ img {
 
 .container-element {
   width: 100%;
+  margin-bottom: 30px;
   border: 1px solid #eeeeee;
+}
+
+.container-element:nth-child(3n + 0) {
+  margin-right: 0;
 }
 
 .container-element:hover {
@@ -931,6 +936,14 @@ img {
           transform: translateY(0);
 }
 
+@media screen and (max-width: 479px) {
+  .container-element:hover .portfolio-text {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    overflow-y: scroll;
+  }
+}
+
 .portfolio-text {
   position: absolute;
   top: 0;
@@ -975,7 +988,7 @@ img {
   margin-bottom: 15px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .btn {
     margin-right: 8px;
     min-width: 73px;
