@@ -1693,8 +1693,7 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 100%;
   background-color: #ffffff;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
@@ -1704,10 +1703,17 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) and (max-width: 1199px) {
   .modal {
     min-width: 450px;
     min-height: 609px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
   }
 }
 
@@ -1779,9 +1785,15 @@ img {
 .form {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
   color: #000000;
+}
+
+@media screen and (min-width: 480px) {
+  .form {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .form-field,

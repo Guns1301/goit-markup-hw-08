@@ -21,16 +21,18 @@
 }
 
 .modal {
-  @media screen and(max-width:1199px) {
+  @media screen and (min-width: 480px) and(max-width:1199px) {
     min-width: 450px;
     min-height: 609px;
   }
   position: absolute;
   top: 50%;
   left: 50%;
-
-  min-width: 528px;
-  min-height: 581px;
+  max-width: 100%;
+  @media screen and (min-width: 1200px) {
+    min-width: 528px;
+    min-height: 581px;
+  }
 
   background-color: $white-color;
 
@@ -100,9 +102,12 @@
 .form {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 41px;
-  padding-right: 39px;
+  padding: 40px;
   color: $dark-color;
+  @media screen and (min-width: 480px) {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
 }
 
 .form-field,
